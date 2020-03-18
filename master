@@ -18,7 +18,7 @@ Public Class SumOfNum
             MessageBox.Show("The sum of those numbers is " & intSum.ToString())
         Catch 'System.InvalidCastException' As Exception
 
-            MessageBox.Show("Unvalid enter")
+            MessageBox.Show("Invalid enter")
         End Try
     End Sub
 
