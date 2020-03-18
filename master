@@ -1,3 +1,5 @@
+'Visual Basic Application
+
 Public Class SumOfNum
     Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
         Dim strNumber As String
