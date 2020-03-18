@@ -1,0 +1,26 @@
+Public Class SumOfNum
+    Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
+        Dim strNumber As String
+        Dim intNumber As Integer
+        Dim intSum As Integer
+        Dim intCount As Integer
+        intCount = 0
+        intSum = 0
+        strNumber = InputBox("Input needed", "Enter a positive integer value", "10")
+        intNumber = CInt(strNumber)
+        Try
+            Do While intCount <= intNumber
+                intSum += intCount
+                intCount += 1
+            Loop
+            MessageBox.Show("The sum of those numbers is " & intSum.ToString())
+        Catch 'System.InvalidCastException' As Exception
+
+            MessageBox.Show("Unvalid enter")
+        End Try
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class
